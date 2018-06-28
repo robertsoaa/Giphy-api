@@ -1,5 +1,9 @@
+#container {
+	background-color: black;
+	width: 100%;
+}
 #header {
-
+	position: fixed;
 	color:whitesmoke;
 	text-align: center;
 	padding-top: 10px;
@@ -7,6 +11,20 @@
 	font-family: Georgia, 'Times New Roman', Times, sans-serif;
 	background-image: url("../images/gameofthronesBackground.jpg");
 	background-size: 100%;
+	z-index: 5;
+}
+#areaForPictures {
+	z-index: 1;
+}
+.button {
+	color: black;
+	font-weight: bold;
+}
+#topLine {
+	margin-left: 30px;
+	margin-right: 30px;
+	position: absolute;
+	top: 380px;
 }
 #topImageL {
 	width: 10%;
@@ -15,8 +33,10 @@
 }
 #topImageC {
 	width: 60%;
+	display: block;
 	float: left;
-	margin-left: 20px;
+   	margin-left: 70px;
+   	
 }
 #topImageR {
 	width: 15%;
@@ -27,9 +47,12 @@
 p.clear {
 	clear: both;
 	background-color: black;
+	
 }
 label {
 	font-size: 18px;
+	color: white;
+	font-family: Georgia, 'Times New Roman', Times, sans-serif;
 }
 
 #character {
@@ -50,3 +73,16 @@ label {
 	display: inline;
 	flex-wrap: wrap;
 }
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+  }
+#newCharacterInput {
+	color: black;
+}
+form label{
+	color:yellow;
+	font-weight: bold;
+}
+	

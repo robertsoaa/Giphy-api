@@ -14,18 +14,22 @@
   <img id="topImageL" src="assets/images/giphy-left.gif">
   <img id="topImageC" src="assets/images/title.png" alt="Game of Thrones Character Image Search">
   <img id="topImageR" src="assets/images/giphy-right.gif">
-  <p class="clear">Click the buttons below to display images of your favorite Game of Thrones Characters<br>Click the images to animate and pause the images<br>You can also search for additional character images to display (or anything you like)!</p>
-</div>
+  <p class="clear">Click the buttons below to display images of your favorite Game of Thrones Characters<br>Click the images to animate and pause the images<br>You can also search for other Game of Thrones character images (or anything else related to Game of Thrones)!</p>
+
+
+
 
 <form class="form-inline" id="gameofthronesSearch">
   <div class="form-group">
     <label for="newCharacterInput">Search for a Game of Thrones Character</label>
-    <input type="text" id="newCharacterInput">
+    <input type="text" class="isGotCharacter" id="newCharacterInput">
   </div>
   <!-- Button allows new character to be added based on users input-->
-  <input id="addCharacter" type="submit" value="submit">
+  <input id="addCharacter" class="button" type="submit" value="submit">
+  <input id="resetButton" class="button" type="reset" value="reset">
 </form>
-
+</div>
+<div id="topLine">
 <div class="row">
   <div class="container">
     <div class="btn-group inline pull-left">
@@ -40,13 +44,14 @@
 </div> <!--end of row -->
 
 
+
 <div class="row">
   <div class="container">
       <span><div id="areaForPictures"></div></span>
   </div> <!--end of container -->
 </div> <!-- end of row  -->
 
-
+</div>
 <script type="text/javascript" src="assets/javascript/app.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
