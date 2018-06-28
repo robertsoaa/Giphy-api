@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Game of Thrones Search</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body id="container">
+
+<div class="jumbotron" id="header">
+  <img id="topImageL" src="assets/images/giphy-left.gif">
+  <img id="topImageC" src="assets/images/title.png" alt="Game of Thrones Character Image Search">
+  <img id="topImageR" src="assets/images/giphy-right.gif">
+  <p class="clear">Click the buttons below to display images of your favorite Game of Thrones Characters<br>Click the images to animate and pause the images<br>You can also search for additional character images to display (or anything you like)!</p>
+</div>
+
+<form class="form-inline" id="gameofthronesSearch">
+  <div class="form-group">
+    <label for="newCharacterInput">Search for a Game of Thrones Character</label>
+    <input type="text" id="newCharacterInput">
+  </div>
+  <!-- Button allows new character to be added based on users input-->
+  <input id="addCharacter" type="submit" value="submit">
+</form>
+
+<div class="row">
+  <div class="container">
+    <div class="btn-group inline pull-left">
+      <button class="btn btn-primary" id="character" data-search="Sansa Stark">Sansa Stark</button>
+      <button class="btn btn-primary" id="character" data-search="John Snow">John Snow</button>
+      <button class="btn btn-primary" id="character" data-search="Daenerys Targaryen">Daenerys Targaryen</button>
+      <button class="btn btn-primary" id="character" data-search="Cersei Lannister">Cersei Lannister</button>
+
+      <div id="myButtons"></div>
+    </div> <!--end of button group -->
+  </div> <!--end of container -->
+</div> <!--end of row -->
+
+
+<div class="row">
+  <div class="container">
+      <span><div id="areaForPictures"></div></span>
+  </div> <!--end of container -->
+</div> <!-- end of row  -->
+
+
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+</body>
+</html>
